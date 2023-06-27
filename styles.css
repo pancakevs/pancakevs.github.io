@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Diavlo_BLACK_II_37"; 
+  src: url("fonts/Diavlo_BLACK_II_37.otf") format('truetype'); 
+}
+
+@font-face {
+  font-family: "comic"; 
+  src: url("fonts/comic.ttf") format('truetype'); 
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 160vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Diavlo_BLACK_II_37"; 
+  background-image: url("back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-gif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.top {
+  top: 1%;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.centered-text {
+  text-align: center;
+  z-index: 2;
+}
+
+h1 {
+  font-family: "Diavlo_BLACK_II_37";
+  color: #547A3F;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+p {
+  font-family: "comic";
+  color: #B9FF94;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.limited-paragraph {
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gray-image {
+  width: 200px;
+  height: 200px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+  margin: 10px;
+}
+
+.gray-image:hover {
+  filter: grayscale(0%);
+}
